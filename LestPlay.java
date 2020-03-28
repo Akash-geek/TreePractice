@@ -40,8 +40,8 @@ public class LestPlay {
 						}
 						break;
 					case 4: System.out.println(top.getHeight(root));
-						break
-					case 5: exit(0);
+						break;
+					case 5: System.exit(0);
 				}
 			}
 		}

@@ -11,7 +11,7 @@ public class LestPlay {
 			TreeOps top = new TreeOps();
 			Node root = top.constructTree();	
 
-			System.out.println("Hi Please enter option for operations 1.print inorder 2. BFS 3.Compare ");
+			System.out.println("Hi Please enter option for operations 1.print inorder 2. BFS 3.Compare 4.get Height ");
 			int cond = sc.nextInt();
 			switch(cond){
 			case 1:top.traverseInOrder(root);
@@ -19,7 +19,6 @@ public class LestPlay {
 			case 2:top.printTreeBFS(root);
 			break;
 			case 3:Node root2 = top.constructTree();
-			
 			if(top.compareTwoBinaryTrees(root, root2)){
 				System.out.println("both are same");
 				System.out.println("Tree 1");
@@ -34,6 +33,7 @@ public class LestPlay {
 			top.printTreeBFS(root2);
 			}
 			break;
+			case 4: System.out.println(top.getHeight(root));
 			}
 		}
 }

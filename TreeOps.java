@@ -116,6 +116,18 @@ public void traverseInOrder(Node node) {
         traverseInOrder(node.right);
     }
 }
+public int getHeight(Node node) {
+	// TODO Auto-generated method stub
+	int rh = 0;
+	int rl =0;
+	if(node != null){
+		rh = getHeight(node.right);
+		rl =getHeight(node.left);
+	 return rh > rl ? rh+1 : rl+1;
+	}
+	return rh > rl ? rh: rl;
+	
+}
 
 
 }

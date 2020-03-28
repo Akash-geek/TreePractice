@@ -7,8 +7,6 @@ public class LestPlay {
 	public static void main(String args[]){
 		Scanner sc = new Scanner(system.in);
 		//System.out.println("Hi Please enter number of threes you want to crate");
-		
-	
 			TreeOps top = new TreeOps();
 			Node root = top.constructTree();	
 

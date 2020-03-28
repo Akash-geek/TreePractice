@@ -11,7 +11,10 @@ public class LestPlay {
 			TreeOps top = new TreeOps();
 			Node root = top.constructTree();	
 
-			System.out.println("Hi Please enter option for operations 1.print inorder 2. BFS 3.Compare 4.get Height 5. exit");
+			System.out.println("Hi Please enter option for operations 1.print inorder "
+					+ "2. BFS 3.Compare "
+					+ "4.get Height "
+					+ "5. exit");
 			int cond = sc.nextInt();
 			while(true){
 				switch(cond){

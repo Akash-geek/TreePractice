@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class LestPlay {
 
 	public static void main(String args[]){
-		Scanner sc = new Scanner(system.in);
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 		//System.out.println("Hi Please enter number of threes you want to crate");
 			TreeOps top = new TreeOps();
 			Node root = top.constructTree();	
@@ -14,19 +15,25 @@ public class LestPlay {
 			int cond = sc.nextInt();
 			switch(cond){
 			case 1:top.traverseInOrder(root);
+			break;
 			case 2:top.printTreeBFS(root);
+			break;
 			case 3:Node root2 = top.constructTree();
-			if(compareTwoBinaryTrees(root, root2)){
-				System.out.println("both are same");
-			}
-			else System.out.println("both are different");
 			
+			if(top.compareTwoBinaryTrees(root, root2)){
+				System.out.println("both are same");
+				System.out.println("Tree 1");
+				top.printTreeBFS(root);
+				System.out.println("Tree 2");
+				top.printTreeBFS(root2);
 			}
-
-		
-		System.out.println(" \n BFS");
-		
-	 top.printTreeBFS(root);
+			else{ System.out.println("both are different");
+			System.out.println("Tree 1");
+			top.printTreeBFS(root);
+			System.out.println("\nTree 2");
+			top.printTreeBFS(root2);
+			}
+			break;
+			}
 		}
-
 }

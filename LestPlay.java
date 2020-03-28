@@ -35,6 +35,7 @@ public class LestPlay {
 			}
 			break;
 			case 4: System.out.println(top.getHeight(root));
+			break
 			case 5: exit(0);
 			}
 		}

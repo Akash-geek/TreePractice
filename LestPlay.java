@@ -11,8 +11,9 @@ public class LestPlay {
 			TreeOps top = new TreeOps();
 			Node root = top.constructTree();	
 
-			System.out.println("Hi Please enter option for operations 1.print inorder 2. BFS 3.Compare 4.get Height ");
+			System.out.println("Hi Please enter option for operations 1.print inorder 2. BFS 3.Compare 4.get Height 5. exit");
 			int cond = sc.nextInt();
+			while(true)
 			switch(cond){
 			case 1:top.traverseInOrder(root);
 			break;
@@ -34,6 +35,7 @@ public class LestPlay {
 			}
 			break;
 			case 4: System.out.println(top.getHeight(root));
+			case 5: exit(0);
 			}
 		}
 }
